@@ -17,7 +17,7 @@ const Table = ({ sat }) => {
            <td>{data.name}</td>
            <td>{data.type}</td>
            <td>{data.launchDate}</td>
-           <td>{data.operational === false ? "Non-operational" : "Operational"}<br></br>{(data.orbitType)} Orbit</td>
+           <td>{data.operational === false ? "Non-operational" : "Operational"}<br></br>{(data.orbitType)}</td>
         </tr>
       
       )}  

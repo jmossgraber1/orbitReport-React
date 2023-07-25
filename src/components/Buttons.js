@@ -3,17 +3,17 @@ import ("./styling.css")
 
 const Buttons = (props) => {
   const filterByType = props.filterByType;
-  const setSat = props.setSat1;
+  const setSat = props.setSat;
   const displaySats = props.displaySats;
   
   return(
-    <>
+    <div className="flex-container">
 {displaySats.map((sat, id) => {
   return (
 
       <button onClick={() => filterByType(sat)} 
       key={id}> 
-      {sat}Orbit 
+      {sat} Orbit 
       </button>
   )
      
@@ -24,6 +24,6 @@ const Buttons = (props) => {
 
 
 
-</>)}
+</div>)}
 
 export default Buttons;
